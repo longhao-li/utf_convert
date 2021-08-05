@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# MacOS
+.DS_store
+
+# Test generated file
+out.txt
+
+build/
+lib/
