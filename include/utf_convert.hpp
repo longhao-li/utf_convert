@@ -23,6 +23,10 @@ bool to_u8string(const std::u32string &u32str,
                  UTF_ENDIAN            u32str_endian,
                  std::string &         target);
 
+bool to_u8string(const std::u16string &u16str,
+                 UTF_ENDIAN            u16str_endian,
+                 std::string &         target);
+
 /*!
  * Convert utf-32 string to utf-8 string. The endian is specified with BOM. You
  * must make sure that the utf-32 string contains BOM.
@@ -32,6 +36,8 @@ bool to_u8string(const std::u32string &u32str,
  * @return true if succeeded.
  */
 bool to_u8string(const std::u32string &u32str_with_bom, std::string &target);
+
+bool to_u8string(const std::u16string &u16str_with_bom, std::string &target);
 
 /*!
  * Convert utf-8 string to utf-32 string.
